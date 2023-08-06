@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.game-container {
+    position: relative;
+    width: 900px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #e1e1e1db;
+    border: 10px solid #e1e1e1db;
+    border-bottom-color: #D2691E;
+}
+
+.dinosaur {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    width: 70px;
+    height: 70px;
+    background-image: url('dinosaur.png');
+    background-size: cover;
+}
+
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-image: url('cactus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+
+#score-display {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+} 
+
+#game-over {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Amatic SC', 'Times New Roman', Times, serif;
+    letter-spacing: 3px;
+    color: black;
+    display: none;
+}
+ 
